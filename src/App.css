@@ -24,7 +24,7 @@
 
 .big-title {
   margin-top: 0px;
-  font-family:'GlowSansTC';
+  font-family:'GlowSansTC', 'Helvetica Neue', sans-serif;
   font-weight: 700;
   font-size: 6rem;
   line-height: 5rem;
@@ -46,7 +46,7 @@
   color: #FC554F;
   font-size: 2rem;
   line-height: 2rem;
-  font-family:'GlowSansTC';
+  font-family:'GlowSansTC', 'Helvetica Neue', sans-serif;
   margin: 24px 0px 12px 4px;
 }
 
@@ -61,7 +61,7 @@
   margin: 0px;
   font-size: 1.5rem;
   line-height: 1.5rem;
-  font-family:'GlowSansTC';
+  font-family:'GlowSansTC', 'Helvetica Neue', sans-serif;
   gap: 8px;
 }
 
@@ -92,7 +92,7 @@
 .english {
   display: flex;
   margin-bottom: 24px;
-  font-family:'GlowSansTC';
+  font-family:'GlowSansTC', 'Helvetica Neue', sans-serif;
   font-size: 2rem;
   line-height: 2rem;
   text-align: left;
@@ -119,7 +119,7 @@
 .year {
   color: #FC554F;
   font-weight: bolder;
-  font-family: 'GlowSansTC';
+  font-family:'GlowSansTC', 'Helvetica Neue', sans-serif;
   font-size: 1.5rem;
   line-height: 1.5rem;
 }
@@ -132,7 +132,7 @@
   font-size: 1.2rem;
   line-height: 1.2rem;
   text-align: left;
-  font-family: 'GlowSansTC';
+  font-family:'GlowSansTC', 'Helvetica Neue', sans-serif;
   margin-bottom: 8px;
 }
 
@@ -141,7 +141,7 @@
   line-height: 1.2rem;
   margin-left: 8px;
   color: #FC554F;
-  font-family: 'GlowSansTC';
+  font-family:'GlowSansTC', 'Helvetica Neue', sans-serif;
   margin-bottom: 8px;
 }
 
@@ -174,7 +174,7 @@ hr {
 .sign {
   color: #000000;
   align-items: center;
-  font-family: 'GlowSansTC';
+  font-family:'GlowSansTC', 'Helvetica Neue', sans-serif;
   display: flex;
   justify-content: space-between;
   cursor: pointer;
@@ -301,7 +301,7 @@ hr {
 }
 
 .switch {
-  font-family: 'GlowSansTC';
+  font-family:'GlowSansTC', 'Helvetica Neue', sans-serif;
   gap: 8px;
   display: flex;
   flex-direction: row;
