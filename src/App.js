@@ -2,7 +2,6 @@ import './App.css';
 import React from 'react';
 import { BsArrowRight } from 'react-icons/bs';
 import { useState } from 'react';
-import { Form } from 'react-bootstrap';
 import Switch from 'rc-switch';
 import 'rc-switch/assets/index.css';
 
@@ -71,7 +70,7 @@ function App() {
           {/* <div className='break'></div> */}
 
           <div className="image-container">
-            <img className='head' src='/head.png' />
+            <img className='head' src='/head.png' alt='arron-nieh'/>
           </div>
 
           <div className='break'></div>
