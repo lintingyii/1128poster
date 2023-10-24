@@ -1,38 +1,309 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: 'GlowSansTC';
+  src: url('GlowSansTC-Extended-Book.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #D3D8E0;
+  /* 日模式下的样式 */
+}
+
+.App-header.dark-mode {
+  background-color: #FC554F;
+  /* 夜模式下的样式 */
+}
+
+.App-header {
   min-height: 100vh;
   display: flex;
+  padding: 24px;
+  margin-bottom: 0px;
+}
+
+.big-title {
+  margin-top: 0px;
+  font-family:'GlowSansTC';
+  font-weight: 700;
+  font-size: 6rem;
+  line-height: 5rem;
+  display: flex;
+  margin-bottom: 0;
+  white-space:pre-wrap;
+  text-align: left;
+}
+
+.group1 {
+  display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
+  margin: 0px;
+}
+
+.date {
+  color: #FC554F;
+  font-size: 2rem;
+  line-height: 2rem;
+  font-family:'GlowSansTC';
+  margin: 24px 0px 12px 4px;
+}
+
+.date.dark-mode {
+  color: #FCFF37;
+}
+
+.time {
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
+  margin: 0px;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  font-family:'GlowSansTC';
+  gap: 8px;
+}
+
+.place {
+  color: #FC554F;
+  font-weight: bolder;
+  margin-left: -6px;
+  margin-right: -6px;
+}
+
+.place.dark-mode {
+  color: #FCFF37;
+}
+
+.break {
+  height: 40vh;
+}
+
+.name {
+  display: flex;
+  font-family:'GlowSansTC', 'Helvetica Neue', sans-serif;
+  font-size: 6rem;
+  line-height: 6rem;
+  margin-top: 0px;
+  margin-bottom: 24px;
+}
+
+.english {
+  display: flex;
+  margin-bottom: 24px;
+  font-family:'GlowSansTC';
+  font-size: 2rem;
+  line-height: 2rem;
+  text-align: left;
+  color: #FC554F;
+}
+
+.english.dark-mode {
+  color: #FCFF37;
+}
+
+.title {
+  display: flex;
+  margin: 0px;
+  font-size: 3rem;
+  line-height: 3rem;
+  border-color: #000000;
+  border-width: 2px;
+  border-style: solid;
+  padding: 8px;
+  white-space: nowrap;
+  text-align: left;
+}
+
+.year {
+  color: #FC554F;
+  font-weight: bolder;
+  font-family: 'GlowSansTC';
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+
+.year.dark-mode {
+  color: #FCFF37;
+}
+
+.little-title {
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  text-align: left;
+  font-family: 'GlowSansTC';
+  margin-bottom: 8px;
+}
+
+.little-subtitle {
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  margin-left: 8px;
+  color: #FC554F;
+  font-family: 'GlowSansTC';
+  margin-bottom: 8px;
+}
+
+.little-subtitle.dark-mode {
+  color: #FCFF37;
+}
+
+hr {
+  border-color: #000000;
+  border-width: 0.5px;
+}
+
+.content {
+  font-family:'GlowSansTC', 'Helvetica Neue', sans-serif;
+  text-align: left;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.discription {
+  display: block;
+  overflow: hidden;
+  max-width: 320px;
+}
+
+.sign {
+  color: #000000;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-family: 'GlowSansTC';
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
 }
 
-.App-link {
-  color: #61dafb;
+.sign:hover {
+  color: #FC554F;
+  transition: transform cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.sign:active {
+  color: #FC554F;
+  transition: transform cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.sign.dark-mode:hover {
+  color: #FCFF37;
+}
+
+.sign.dark-mode:active {
+  color: #FCFF37;
+}
+
+.sign:hover .arrow {
+  transform: rotate(-45deg);
+}
+
+.sign:active .arrow {
+  transform: rotate(-45deg);
+}
+
+.arrow {
+  font-size:x-large;
+  line-height: 0px;
+}
+
+@media (max-width: 768px) {
+  .big-title {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
   }
-  to {
-    transform: rotate(360deg);
+  .date {
+    font-size: 1.5rem;
+    line-height: 1.2rem;
   }
+  .time {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+  .break {
+    height: 10vh;
+  }
+  .name {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+  }
+  .title {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+  .year {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+  .bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .discription {
+    max-width: 68vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .big-title {
+    font-size: 2rem;
+    line-height: 1rem;
+  }
+  .date {
+    font-size: 1rem;
+    line-height: 0.2rem;
+  }
+  .time {
+    font-size: 0.5rem;
+    line-height: 0.2rem;
+  }
+  .break {
+    height: 8vh;
+  }
+  .name {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  .title {
+    font-size: 0.5rem;
+    line-height: 0.5rem;
+  }
+  .year {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+  .bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .discription {
+    max-width: 68vw;
+  }
+}
+
+.image-container {
+  margin-left: -24px;
+  max-width: 1200px; /* 设置最大宽度 */
+  max-height: 1500px; /* 设置最大高度 */
+  overflow: hidden; /* 超出部分隐藏 */
+}
+
+.head {
+  width: 100%; /* 图像宽度100% */
+  height: auto;
+}
+
+.switch {
+  font-family: 'GlowSansTC';
+  gap: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
